@@ -1,0 +1,26 @@
+{
+    "version": "4.0.108",
+    "description": "AbdoCode — a coding agent that runs on your own machine, from the terminal (Arabic and English).",
+    "homepage": "https://github.com/code-ksa/abdocode",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://github.com/code-ksa/abdocode/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/code-ksa/abdocode/releases/download/v4.0.108/abdocode-cli-win32-x64-4.0.108.zip",
+            "hash": "09592f689d0e90ad80ea5aad97bcb042911e44f233ccfa58c97bf37027e10b4a"
+        }
+    },
+    "bin": "abdocode.exe",
+    "checkver": {
+        "github": "https://github.com/code-ksa/abdocode"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/code-ksa/abdocode/releases/download/v$version/abdocode-cli-win32-x64-$version.zip"
+            }
+        }
+    }
+}
